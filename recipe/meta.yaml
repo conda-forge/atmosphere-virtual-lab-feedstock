@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 {% set name = "atmosphere-virtual-lab" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/stcorp/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 46b266bb27dbf981f36231c15061b93a8e2a720cf82b0030e223f37c0f54fda2
+  sha256: 862125093955a160ed5dc8906e34be9158c6fef6f397217d9a2c03e2e8e0b5f8
 
 build:
   number: 0
