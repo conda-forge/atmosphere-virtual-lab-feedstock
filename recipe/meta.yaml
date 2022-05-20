@@ -30,7 +30,7 @@ requirements:
     - requests
     - coda
     - ipyleaflet-gl-vector-layer-plugin
-    - ipyleaflet >= 0.15
+    - ipyleaflet >=0.15.0
     - harp
     - panel
     - pyproj
