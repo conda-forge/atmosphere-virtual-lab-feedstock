@@ -1,4 +1,4 @@
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 {% set name = "atmosphere-virtual-lab" %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/stcorp/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 862125093955a160ed5dc8906e34be9158c6fef6f397217d9a2c03e2e8e0b5f8
+  sha256: c144945098a6e2c0e28fd3d0b6553030c87fd4fb46ceb22952cadd5e89d106c8
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,20 +20,19 @@ requirements:
     - sysroot_linux-64 2.17  # [linux64]
 
   host:
-    - python >=3.9
+    - python >=3.7
     - pip
 
   run:
     - jupyterlab >=3
     - jupytext
-    - python >=3.9
+    - python >=3.7
     - requests
     - coda
     - ipyleaflet-gl-vector-layer-plugin
-    - ipyleaflet =0.15.0
-    - svt-av1 =0.9.1
+    - ipyleaflet >=0.15.0
     - harp
-    - panel =0.12.7
+    - panel
     - pyproj
     - vtk >=9.1
     - plotly
