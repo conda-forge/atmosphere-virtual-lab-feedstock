@@ -38,6 +38,7 @@ requirements:
     - plotly
     - numpy
     - scipy
+    - matplotlib
 
 test:
   imports:
