@@ -1,4 +1,4 @@
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 {% set name = "atmosphere-virtual-lab" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/stcorp/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: bcae7f663affcd77faba44309b064864e49ad31a3bee9404a8fcb4865f1b622e
+  sha256: fba662f6293f30d81c10421e1061e2932361eabe12da68da627703c27482d95e
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - python >=3.7
     - requests
     - coda
-    - ipyleaflet-gl-vector-layer-plugin
+    - ipyleaflet-gl-vector-layer-plugin >=0.1.6
     - ipyleaflet
     - harp
     - panel
