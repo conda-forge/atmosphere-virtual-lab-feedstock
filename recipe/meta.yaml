@@ -1,4 +1,4 @@
-{% set version = "0.1.12" %}
+{% set version = "0.2" %}
 {% set name = "atmosphere-virtual-lab" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/stcorp/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d75e2928759fd76abe62dcfc1aba6332425de846096715fba846cccbf13faa6e
+  sha256: 7bcf1a2d2cef21b74213696c03d07a6e5c6a09230efe8d647b3b7ce6ea5e7e6d
 
 build:
   number: 0
@@ -39,6 +39,7 @@ requirements:
     - numpy
     - scipy
     - matplotlib-base
+    - cmcrameri
 
 test:
   imports:
