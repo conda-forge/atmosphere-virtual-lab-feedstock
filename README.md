@@ -1,11 +1,11 @@
-About atmosphere-virtual-lab
-============================
+About atmosphere-virtual-lab-feedstock
+======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/atmosphere-virtual-lab-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/stcorp/atmosphere-virtual-lab
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/atmosphere-virtual-lab-feedstock/blob/main/LICENSE.txt)
 
 Summary: Atmosphere Virtual Lab
 
