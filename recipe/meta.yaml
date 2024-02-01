@@ -10,7 +10,7 @@ source:
   sha256: 09165fbaf747c642dc36659f014e0266cb7f8e708421341a5a0e8b9218640c0e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,22 +24,25 @@ requirements:
     - pip
 
   run:
+    - beamf
+    - cmcrameri
+    - coda
+    - harp
+    - ipyleaflet
+    - ipyleaflet-gl-vector-layer-plugin >=0.1.6
     - jupyterlab >=3
     - jupytext
-    - python >=3.7
-    - requests
-    - coda
-    - ipyleaflet-gl-vector-layer-plugin >=0.1.6
-    - ipyleaflet
-    - harp
-    - panel
-    - pyproj
-    - vtk >=9.1
-    - plotly
-    - numpy
-    - scipy
     - matplotlib-base
-    - cmcrameri
+    - numpy
+    - panel
+    - plotly
+    - pyproj
+    - python >=3.7
+    - qdoas
+    - qdoas2harp
+    - requests
+    - scipy
+    - vtk >=9.1
 
 test:
   imports:
