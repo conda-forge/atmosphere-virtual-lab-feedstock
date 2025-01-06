@@ -10,7 +10,7 @@ source:
   sha256: 09165fbaf747c642dc36659f014e0266cb7f8e708421341a5a0e8b9218640c0e
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,7 +20,7 @@ requirements:
     - sysroot_linux-64 2.17  # [linux64]
 
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
 
   run:
@@ -37,7 +37,7 @@ requirements:
     - panel
     - plotly
     - pyproj
-    - python >=3.7
+    - python >={{ python_min }}
     - qdoas
     - qdoas2harp
     - requests
@@ -45,6 +45,8 @@ requirements:
     - vtk >=9.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - avl
 
