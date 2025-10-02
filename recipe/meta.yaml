@@ -27,6 +27,7 @@ requirements:
   run:
     - beamf
     - cartopy
+    - cmap
     - cmcrameri
     - coda
     - doas_cl
