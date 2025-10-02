@@ -10,7 +10,7 @@ source:
   sha256: 19f5f3497c4ffb5e96504caa6ddeaf6053ec80c70f51fea28fdaa0615316838c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,10 +26,12 @@ requirements:
 
   run:
     - beamf
+    - cartopy
     - cmcrameri
     - coda
     - doas_cl
     - eofetch
+    - fsspec
     - harp
     - importlib_resources
     - ipyleaflet
@@ -46,6 +48,7 @@ requirements:
     - requests
     - scipy
     - vtk >=9.1
+    - xarray
     - zarr
 
 test:
